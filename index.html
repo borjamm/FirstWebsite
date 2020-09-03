@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>BMM</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <body onLoad="setInterval('changes()', 5000);">
+		<header>
+			<nav>
+				<ul id="logo"><li class="navegador"><a class = "principal" href="#titular"><div>BMM</div></a></li></ul>	
+
+		      	<a href="#" onclick="return muestraMenu()" class="mobile"><img src="./images/menu.png"></a>
+                
+
+				<ul id="pc">
+					<li class="navegador"><a href="#titular"><div>Home</div></a></li>
+					<li class="navegador"><a href="#sobreMi"><div>Sobre mí</div></a></li>
+					<li class="navegador"><a href="#experiencia"><div>Experiencia</div></a></li>
+					<li class="navegador"><a href="#services"><div>Servicios</div></a></li>
+					<li class="navegador"><a href="#contact"><div>Contáctame</div></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<ul class="menu-movil-true">
+            	<li onclick="return muestraMenu()" class="menu-movil"><a href="#titular"><div>Home</div></a></li>
+            	<li onclick="return muestraMenu()" class="menu-movil"><a href="#sobreMi"><div>Sobre mí</div></a></li>
+            	<li onclick="return muestraMenu()" class="menu-movil"><a href="#experiencia"><div>Experiencia</div></a></li>
+            	<li onclick="return muestraMenu()" class="menu-movil"><a href="#services"><div>Servicios</div></a></li>
+            	<li onclick="return muestraMenu()" class="menu-movil"><a href="#contact"><div>Contáctame</div></a></li>
+            </ul>
+			<section id="titular">
+				
+					<h1><img src="./images/icon.svg" alt="Icon profile" height="300" width="300"></h1>
+					<h1>BORJA MACHÍN MORERA</h1>
+					<div id="changes">
+						<h4 id="social">Estudiante de diseñador web<span>&nbsp;</span></h4>
+					</div>
+
+					<a href="documents/CV_BMM.pdf">
+						<div id="contornoCV">
+							<div class="CV">
+								<p>Mi C.V.</p>
+							</div>
+							<div id="imagen">
+								<img src="./images/file.png">
+							</div>
+						</div>
+					</a>
+				
+			</section>
+
+			<section id="sobreMi">
+				<div class="formulario">
+					<div class="porcentajes">
+						<div class="img"><img src="./images/icon.svg"></div>
+						<div class="about">
+							<p><span class="about-negrita">Nombre:</span>
+								<span>Lorem</span></p>
+							<p><span class="about-negrita">Apellidos:</span>
+								<span>Lorem ipsum</span></p>
+							<p><span class="about-negrita">Email:</span>
+								<span>Lorem@lorem.com</span></p>
+							<p><span class="about-negrita">Usuario de GitHub:</span>
+								<span>Loremipsum</span></p>
+							<p><span class="about-negrita">Teléfono:</span>
+								<span>(+34) 123456789</span></p>
+						</div>
+					</div>
+					<div class="informacion">
+						<div>
+							<h2>Sobre mí</h2>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus eum aliquam dignissimos dicta, voluptas voluptate error eius consectetur illum. Iste sint laudantium, voluptates explicabo exercitationem ea voluptate quo quis similique Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, illum natus cupiditate magnam quasi voluptate sapiente expedita maxime tenetur alias ipsum sint. Recusandae eveniet accusamus voluptatum vitae sed atque laborum</p>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus eum aliquam dignissimos dicta, voluptas voluptate error eius consectetur illum. Iste sint laudantium, voluptates explicabo exercitationem ea voluptate quo quis similique Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque esse voluptatum nobis! Ducimus deserunt rem modi sint voluptas ipsam sequi. Expedita dolore autem cum animi consequuntur repellendus excepturi! Ut, laudantium!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="experiencia">
+				<div class="barritas">
+					<h2 id="h2">Experiencia</h2>
+					<p class="izq">HTML</p>
+					<p class="der">85%</p>
+					<div class="totalBarra"><div id="b-html"></div></div>
+
+					<p class="izq">CSS</p>
+					<p class="der">70%</p>
+					<div class="totalBarra"><div id="b-css"></div></div>
+
+					<p class="izq">PHP</p>
+					<p class="der">60%</p>
+					<div class="totalBarra"><div id="b-php"></div></div>
+
+					<p class="izq">JAVASCRIPT</p>
+					<p class="der">65%</p>
+					<div class="totalBarra"><div id="b-js"></div></div>
+				</div>
+			</section>
+
+
+			<section id="services">
+				<div id="services-total">
+					<h2 id="h2">Servicios</h2>
+					<div class="div-service">
+						<div class="circle-service">
+							<img src="./images/monitor.png">
+						</div>
+						<h2>Diseño web</h2>
+					</div>
+					<div class="div-service">
+						<div class="circle-service">
+							<img src="./images/DW.png">
+						</div>
+						<h2>Desarrollo web</h2>
+					</div>
+					<div class="div-service">
+						<div class="circle-service">
+							<img src="./images/responsive.png">
+						</div>			
+						<h2>Diseño responsive</h2>		
+					</div>
+				</div>
+			</section>
+
+
+			<section id="contact">
+				<div class="contact-form">
+					<h2 id="h2">Contáctame</h2>
+					<form action="index.html" method="post" enctype="multipart/form-data" onsubmit="return validarFormulario()">
+						<div id="elementos-form">
+								<div id="Error0">
+									<label for="nombre">Nombre:*</label>
+									<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+									<img src="./images/cancel.png" id="image-error-text">
+								</div>
+								<div id="Error2">
+									<label for="direccion">Dirección de correo:*</label>
+									<input type="text" name="direccion" id="direccion" placeholder="E-mail">
+									<img src="./images/cancel.png" id="image-error-text">
+								</div>
+									<label for="asunto">Asunto:*</label>
+									<input type="text" name="asunto" id="asunto" placeholder="Asunto">
+									<img src="./images/cancel.png" id="image-error-text">
+									<textarea name="mensaje" id="descripcion" placeholder="Escriba aquí su mensaje" cols="100" rows="10"></textarea>
+
+								<div id="Error4"></div>
+								<input type="submit" value="Enviar mensaje">
+						</div>
+					</form>
+				</div>
+			</section>
+
+		</main>
+		<footer>&copy;  BMM | Redes Sociales</footer>
+		<script src="BMM.js" ></script>
+    </body>
+</html>
