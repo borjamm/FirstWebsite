@@ -2,6 +2,11 @@ var worksNames = ["Software Engineer", "Web designer", "Frotend Developer"];
 var iterator = 0;
 var works = document.getElementById("works");
 
+window.addEventListener('resize', () => {
+    var vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 window.addEventListener("load", function() {
     setInterval(changesItems, 4000);
 });
@@ -19,4 +24,8 @@ function showMenu() {
         var menu = document.querySelector("#navigation ul");
         menu.classList.toggle("mobile");
     }
+}
+
+function validateForm() {
+    console.log("Comprobación de campos");
 }

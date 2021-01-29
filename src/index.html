@@ -13,7 +13,7 @@
 	</head>
 	<body onload="changesItems()">
 		<header id="header">
-			<a id="nickname" href="#titular">BMM</a>
+			<a id="nickname" href="#index">BMM</a>
 			<nav id="navigation">
 				<ul>
 					<li onclick="showMenu()"><a href="#index">Inicio</a></li>
@@ -22,10 +22,9 @@
 					<li onclick="showMenu()"><a href="#services">Servicios</a></li>
 					<li onclick="showMenu()"><a href="#contact">Contacto</a></li>
 				</ul>
-
 			</nav>
 			<a onclick="showMenu()" id="hamburguer">
-				<img src="./img/menu.svg">
+				<img src="./img/menu.svg" alt="Icon hamburguer">
 			</a>
 		</header>
 
@@ -33,13 +32,13 @@
 			<section id="index">
 				<img class="icon__profile" src="./img/icon.svg" alt="Icon profile">
 				<h1>Borja Machín Morera</h1>
-				<h4 id="works">Frotend Developer</h4>
+				<h2 id="works">Frotend Developer</h2>
 			</section>
 
 			<section id="about__me">
 				<div class="container__author">
 					<div class="person">
-						<img src="./img/icon.svg">
+						<img src="./img/icon.svg" alt="Icon person">
 						<div class="about">
 							<p><span class="about__span">Nombre:</span>Lorem</p>
 							<p><span class="about__span">Apellidos:</span>Lorem ipsum</p>
@@ -94,19 +93,19 @@
 				<div class="container__services">
 					<div class="service__item">
 						<div class="circle">
-							<img src="./img/monitor.png">
+							<img src="./img/monitor.png" alt="Icon Web Design">
 						</div>
 						<h3>Diseño web</h3>
 					</div>
 					<div class="service__item">
 						<div class="circle">
-							<img src="./img/DW.png">
+							<img src="./img/DW.png" alt="Icon Development Web">
 						</div>
 						<h3>Desarrollo web</h3>
 					</div>
 					<div class="service__item">
 						<div class="circle">
-							<img src="./img/responsive.png">
+							<img src="./img/responsive.png" alt="Icon Responsive Design">
 						</div>			
 						<h3>Diseño responsive</h3>		
 					</div>
@@ -116,22 +115,23 @@
 			<section id="contact">
 				<div class="container__contact">
 					<h2>Contáctame</h2>
-					<form action="index.html" method="post" enctype="multipart/form-data" onsubmit="return validarFormulario()">
+					<form action="index.html" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
 						<ul id="list_contact">
-							<li id="error_0">
+							<li>
 								<label for="name">Nombre: <abbr title="Campo obligatorio">*</abbr></label>
 								<input type="text" name="nombre" id="name" placeholder="Nombre" required>
 							</li>
-							<li id="error_2">
+							<li>
 								<label for="email">Dirección de correo: <abbr title="Campo obligatorio">*</abbr></label>
 								<input type="email" name="direccion" id="email" placeholder="E-mail" required>
 							</li>
-							<li id="error_3">
+							<li>
 								<label for="subject">Asunto: <abbr title="Campo obligatorio">*</abbr></label>
 								<input type="text" name="asunto" id="subject" placeholder="Asunto" required>
 							</li>
-							<li id="error_4">
-								<textarea name="mensaje" id="descripcion" placeholder="Escriba aquí su mensaje" cols="100" rows="10" required></textarea>
+							<li>
+								<label for="description">Descripción: <abbr title="Campo obligatorio">*</abbr></label>
+								<textarea name="mensaje" id="description" placeholder="Escriba aquí su mensaje" cols="100" rows="10" required></textarea>
 							</li>
 							<li>
 								<input type="submit" value="Enviar mensaje">
