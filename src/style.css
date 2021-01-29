@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
 }
 
 html {
@@ -449,11 +449,11 @@ footer a:hover{
     }
     #hamburguer {
         display: block;
+        margin-top: .2rem;
+        margin-right: .5rem;
     }
     #hamburguer > img {
         width: 2rem;
-        margin-right: 1rem;
-        margin-top: .2rem;
     }
     .list__skills li {
         width: 90%;
