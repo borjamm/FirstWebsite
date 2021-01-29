@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    /* font-family: cursive, sans-serif; */
     font-family: 'Signika', sans-serif;
     font-size: 16px;
 }
@@ -52,7 +51,6 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
     width: 100%;
